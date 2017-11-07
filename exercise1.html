@@ -4,16 +4,20 @@
 
 		<meta charset="utf-8">
 
-        <title>First JavaScript</title>
+        <title>Homework 3</title>
 
         <script type = "text/javascript">
-            // document.writeln("<h1>Welcome to JavaScript Programming!</h1>");
         
             var celsiusDegree; // 攝氏
             celsiusDegree = window.prompt("請輸入攝氏溫度 : ");
 
+            function celsiusToFahrenheit( celsiusDegree ) {
+                return (9/5)*celsiusDegree + 32;
+            }
+
+
             var fahrenheitDegree; // 華氏
-            fahrenheitDegree = (9/5)*celsiusDegree + 32;
+            fahrenheitDegree = celsiusToFahrenheit(celsiusDegree);
 
             document.writeln("<h1>你輸入 " + celsiusDegree + " ℃</h1>");
             document.writeln("<h1>等於是 " + fahrenheitDegree + " ℉</h1>");
